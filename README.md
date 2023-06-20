@@ -31,7 +31,7 @@ Note that you should adapt the json filename to include your team name. My team 
 ## II. Docker image creation
 
 - Build docker image: `docker build -t public_docker .`
-- Verify the code: `docker run --mount type=bind,source="$(pwd)"/data,target=/data -e token=public_token public_docker`
+- Verify the code: `docker run --mount type=bind,source="$(pwd)"/secret_data,target=/data -e token=public_token public_docker`
 
 You should be able to see the solution json file in the data/solution directory
 
@@ -39,7 +39,7 @@ You should be able to see the solution json file in the data/solution directory
 Note: `saimo2020` is my docker hub account, you should replace with your own account.
 
 - Tag your docker image: `docker tag public_docker:latest saimo2020/public_docker:v11`
-- Push your docker image: `docker image push saimo2020/public_docker:v1`
+- Push your docker image: `docker image push saimo2020/public_docker:v11`
 
 For the first time, it would take a while to push different layers in the docker hub. Once the base layers are published, the next push should take only few seconds.
 
@@ -51,4 +51,4 @@ https://hub.docker.com/repository/docker/saimo2020/public_docker/general
 - Locate to the website: https://lab42.global/arcathon/submission/
 - Docker-related fields
   - `docker pull saimo2020/public_docker:v11`
-  - `docker run --mount type=bind,source="$(pwd)"/data,target=/data saimo2020/public_docker:v11`
+  - `docker run --mount type=bind,source="$(pwd)"/secret_data,target=/data saimo2020/public_docker:v11`
