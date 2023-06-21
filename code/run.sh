@@ -8,6 +8,9 @@ lab42_solution_dir="/data/solution"
 ################################################################################
 # 
 cd /kaggle/working/
+
+cd /kaggle/working/
+
 ################################################################################
 
 ################################################################################
@@ -27,7 +30,16 @@ python arc_pre.py
 
 ################################################################################
 # Your main code
-python arc_crop.py
+# python arc_crop.py
+
+# g++ -pthread -lpthread -O3 -std=c++17 -o m3_t7 m3_t7.cpp
+# ./m3_t7
+# python3 m3_t7.py
+# cp submission_top3_tree7.csv submission_ensemble.csv
+
+python top8_decision_trees.py
+cp submission_top8_tree.csv submission_ensemble.csv
+
 ################################################################################
 
 ################################################################################
