@@ -64,8 +64,24 @@ python3 m3_zoltan.py
 # submission_top3_dsl5_r1.csv, submission_top3_dsl5_r2.csv
 # submission_top3_zoltan.csv
 
-# submission_top10.csv
-cp submission_top10.csv submission_ensemble.csv
+# TOP TOP
+python mt_mosai5.py
+python arc_crop.py
+# submission_mosai5.csv, submission_crop5.csv
+
+# TOP 1
+echo "Running TOP 1 ..."
+cd /kaggle/working/
+cd /kaggle/working/arc-solution-source-files
+cp ../m1_run.py .
+python m1_run.py
+cp submission_part.csv ../submission_top1.csv
+# submission_top1.csv
+
+# Ensemble
+cd /kaggle/working/
+python mm_ensemble.py
+# submission_ensemble.csv
 
 ################################################################################
 

@@ -15,7 +15,7 @@ test_path = data_path / 'test'
 SAMPLE_SUBMISSION = data_path / 'sample_submission.csv'
 
 
-SUBMISSION_FILENAME = "submission_ensemble.csv"
+SUBMISSION_FILENAME = "submission_crop5.csv"
 
 # ----------------------------------------
 
