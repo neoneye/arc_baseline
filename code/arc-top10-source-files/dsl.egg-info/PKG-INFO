@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dsl
+Version: 0.0.1
+Summary: C++ accelerated DSL
+Home-page: https://github.com/artyompal/kaggle-abstract-reasoning
+Author: Artyom Palvelev
+Author-email: no@example.com
+License-File: LICENSE
