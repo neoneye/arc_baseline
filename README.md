@@ -1,6 +1,6 @@
 # Docker baseline
 
-This repo is an example docker solution for the challenge https://lab42.global/arcathon/.
+This repo https://github.com/tien2020le2020/arc_baseline is an example docker solution for the challenge https://lab42.global/arcathon/.
 The main python code is a copied version from https://www.kaggle.com/code/user189546/5-crop-tasks-by-brute-force.
 
 ## I. Solution structure

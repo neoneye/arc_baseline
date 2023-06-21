@@ -110,7 +110,7 @@ def main(nicks, first_only, majority_voting, order_by_confidence):
     return submission
 
 
-lines1 =  [ 'submission_top3_dsl8.csv', 
+lines =  [ 'submission_top3_dsl8.csv', 
             'submission_top3_dsl5_r1.csv',  'submission_top3_dsl5_r2.csv', 
             'submission_top3_zoltan.csv']
 

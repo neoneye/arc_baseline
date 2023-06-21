@@ -79,6 +79,7 @@ cp submission_part.csv ../submission_top1.csv
 # submission_top1.csv
 
 # Ensemble
+echo "Running Ensemble ..."
 cd /kaggle/working/
 python mm_ensemble.py
 # submission_ensemble.csv
