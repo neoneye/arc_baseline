@@ -116,9 +116,12 @@ lines =  [ 'submission_top3_dsl8.csv',
 
 lines +=  [ 'submission_crop5.csv',  'submission_mosai5.csv', 
                 'submission_top1.csv', 'submission_top10.csv',
-                'submission_top8_tree.csv']    
+                'submission_top3_tree7.csv',
+                # 'submission_top8_tree.csv'
+        ]    
 
 nicks = lines[:]
+print(nicks)
 
 submission = main(
     nicks=nicks,

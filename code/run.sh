@@ -33,9 +33,11 @@ python arc_pre.py
 # Your main code
 # python arc_crop.py
 
-# g++ -pthread -lpthread -O3 -std=c++17 -o m3_t7 m3_t7.cpp
-# ./m3_t7
-# python3 m3_t7.py
+# TOP 3 - Part 1
+echo "Running TOP 3 - Part 1 ..."
+g++ -pthread -lpthread -O3 -std=c++17 -o m3_t7 m3_t7.cpp
+./m3_t7
+python3 m3_t7.py
 # cp submission_top3_tree7.csv submission_ensemble.csv
 
 # TOP 8
@@ -54,8 +56,8 @@ python mt10_run.py
 cp submission_top10.csv ..
 # submission_top10.csv
 
-# TOP 3
-echo "Running TOP 3 ..."
+# TOP 3 - Part 2
+echo "Running TOP 3 - Part 2 ..."
 cd /kaggle/working/
 python m3_d8.py
 python m3_d5.py
